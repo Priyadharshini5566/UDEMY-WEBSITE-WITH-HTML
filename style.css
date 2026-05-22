@@ -83,8 +83,17 @@ body {
     color: white;
     border-radius: 30px;
     padding: 10px;
+    border:solid #a435f0 1px;
 
 
+}
+.catogories p:hover{
+    background-color:transparent;
+    color: black;
+    
+    transition-duration: 2s;
+    cursor: pointer;
+    
 }
 .image{
     position: relative;
@@ -98,8 +107,24 @@ body {
     position: absolute;
   top: 10%;
   left: 10%;
+  animation-name: p;
+  animation-duration: 2s;
+  opacity: 0;
+  animation-fill-mode: forwards;
+  
     
 }
+@keyframes p {
+    0%{
+        transform: scale(0);
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
 .image img {
     width: 100%;
 }
